@@ -14,6 +14,6 @@ public class TestController {
 
     @PostMapping
     public ResponseEntity<String> postTest(@RequestBody PersonDto personDto) {
-        return ResponseEntity.ok("Response is: " + personDto.getName());
+        return ResponseEntity.ok("Response is: " + personDto.getName() + " " + personDto.getPosition().getPositionName());
     }
 }

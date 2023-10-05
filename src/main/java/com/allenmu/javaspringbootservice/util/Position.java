@@ -1,9 +1,12 @@
 package com.allenmu.javaspringbootservice.util;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 public enum Position {
     SS("Short Stop"),
     SB("Second Baseman"),
-    P("Pitcher");
+    P("Pitcher"),
+    O("Other");
 
     private final String positionName;
 
@@ -14,4 +17,14 @@ public enum Position {
     public String getPositionName() {
         return positionName;
     }
+
+    @JsonCreator
+    public static Position fromString(String value) {
+        for (Position position : Position.values()) {
+            if (position.name().equals(value)) {
+                return position;
+            }
+        }
+        return Position.O;
     }
+}
