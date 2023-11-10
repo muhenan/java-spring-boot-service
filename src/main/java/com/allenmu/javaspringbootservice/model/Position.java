@@ -1,4 +1,4 @@
-package com.allenmu.javaspringbootservice.util;
+package com.allenmu.javaspringbootservice.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 

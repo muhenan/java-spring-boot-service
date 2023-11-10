@@ -1,6 +1,6 @@
-package com.allenmu.javaspringbootservice.dto;
+package com.allenmu.javaspringbootservice.model.dto;
 
-import com.allenmu.javaspringbootservice.util.Position;
+import com.allenmu.javaspringbootservice.model.Position;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import lombok.AllArgsConstructor;

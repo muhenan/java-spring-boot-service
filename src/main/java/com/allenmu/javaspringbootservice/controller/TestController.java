@@ -1,6 +1,6 @@
 package com.allenmu.javaspringbootservice.controller;
 
-import com.allenmu.javaspringbootservice.dto.PersonDto;
+import com.allenmu.javaspringbootservice.model.dto.PersonDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
